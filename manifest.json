@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "copyKeywordsRED",
+    "version": "1.0",
+    "description":"copy more keywords so easy and fast from redbubble maded By BEN DAIKH BRAHIM",
+    "background": {
+        "scripts": ["eventPage.js"]
+    },
+    "browser_action": {
+        "default_icon": "getKeyRed.png"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "run_at": "document_start",
+            "matches": ["https://www.redbubble.com/*"],
+            "js": ["content.js","jquery.min.js"]
+        }
+    ]
+}
